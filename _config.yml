@@ -1,7 +1,7 @@
 title: "Amine Security"
 description: "Cybersecurity blog, CTF writeups, Hack The Box tutorials, projects, and notes."
-url: "https://4m1n3Bxd.github.io"
-baseurl: "/amine-cyber-blog-v2"
+url: "https://aminebrd.github.io"
+baseurl: ""
 author:
   name: "Amine"
   handle: "4m1n3Bxd"
@@ -56,3 +56,6 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+  - vendor
+  - .bundle
+  - node_modules
