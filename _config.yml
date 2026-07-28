@@ -1,0 +1,58 @@
+title: "Amine Security"
+description: "Cybersecurity blog, CTF writeups, Hack The Box tutorials, projects, and notes."
+url: "https://4m1n3Bxd.github.io"
+baseurl: "/amine-cyber-blog-v2"
+author:
+  name: "Amine"
+  handle: "4m1n3Bxd"
+
+permalink: /blogs/:title/
+
+collections:
+  writeups:
+    output: true
+    permalink: /writeups/:path/
+  notes:
+    output: true
+    permalink: /notes/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      section: "blogs"
+  - scope:
+      path: ""
+      type: "writeups"
+    values:
+      layout: "post"
+      section: "writeups"
+  - scope:
+      path: ""
+      type: "notes"
+    values:
+      layout: "post"
+      section: "notes"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "post"
+      section: "projects"
+
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

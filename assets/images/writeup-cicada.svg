@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420" role="img" aria-label="VulnCicada thumbnail">
+  <defs>
+    <linearGradient id="g" x1="62" y1="364" x2="350" y2="54" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#53e5ff"/>
+      <stop offset=".5" stop-color="#9b5cff"/>
+      <stop offset="1" stop-color="#ff4fd8"/>
+    </linearGradient>
+  </defs>
+  <rect width="420" height="420" rx="8" fill="#0a0812"/>
+  <circle cx="210" cy="210" r="156" fill="#151226" stroke="#ff9f43" stroke-width="18"/>
+  <g stroke="#ff9f43" stroke-width="8">
+    <path d="M210 28v48M210 344v48M28 210h48M344 210h48M81 81l34 34M305 305l34 34M339 81l-34 34M115 305l-34 34"/>
+  </g>
+  <path d="M125 246c38-120 119-150 174-78 28 37 19 88-27 115-50 29-120 7-147-37Z" fill="url(#g)" opacity=".92"/>
+  <path d="M170 144c43 43 86 68 140 76-54 20-118 15-170-8 5-28 15-50 30-68Z" fill="#07070d" opacity=".72"/>
+  <path d="M134 260c63-17 118-44 166-83M161 303c13-51 35-98 68-140" stroke="#d6ff65" stroke-width="7" stroke-linecap="round" opacity=".78"/>
+  <circle cx="270" cy="181" r="9" fill="#d6ff65"/>
+</svg>

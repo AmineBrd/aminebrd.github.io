@@ -1,0 +1,24 @@
+---
+layout: page
+title: "Writeups"
+description: "Retired-machine notes written as repeatable methodology: what I checked, what worked, what failed, and what I learned."
+eyebrow: "Hack The Box - CTFs - labs"
+permalink: /writeups/
+nav: writeups
+---
+
+{% assign writeups = site.writeups | sort: "date" | reverse %}
+<div class="filters">
+  <span class="pill">Linux</span>
+  <span class="pill">Windows</span>
+  <span class="pill">Easy</span>
+  <span class="pill">Medium</span>
+  <span class="pill">Hard</span>
+  <span class="pill">Active Directory</span>
+</div>
+
+<section class="article-list section">
+  {% for item in writeups %}
+    {% include card.html item=item image=item.thumbnail label=item.os %}
+  {% endfor %}
+</section>

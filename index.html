@@ -1,0 +1,54 @@
+---
+layout: home
+title: "Amine Security"
+description: "Cybersecurity blog, CTF writeups, Hack The Box tutorials, projects, and notes."
+nav: home
+---
+
+<section class="hero">
+  <div>
+    <span class="eyebrow">cybersecurity - CTFs - notes - projects</span>
+    <h1><span class="gradient-text">Amine's cyber journey</span></h1>
+    <p>
+      A personal lab log for learning security in public: Hack The Box writeups,
+      CTF methodology, Linux/networking notes, project builds, and lessons worth remembering.
+    </p>
+    <div class="hero-actions">
+      <a class="button primary" href="{{ '/writeups/' | relative_url }}">Read writeups</a>
+      <a class="button" href="{{ '/notes/' | relative_url }}">Open notes</a>
+    </div>
+  </div>
+  <div class="hero-visual" aria-label="Cybersecurity dashboard illustration">
+    <img src="{{ '/assets/images/cyber-console.svg' | relative_url }}" alt="">
+    <div class="terminal-card">
+      <span class="prompt">$ whoami</span>
+      <p>student, builder, CTF player, documenting every lesson that should not be forgotten.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="grid">
+    <a class="feature" href="{{ '/writeups/' | relative_url }}">
+      <span class="tag">offensive labs</span>
+      <h3>CTF Writeups</h3>
+      <p>Enumeration, exploitation, privilege escalation, loot, and lessons learned.</p>
+    </a>
+    <a class="feature" href="{{ '/blogs/' | relative_url }}">
+      <span class="tag">long-form</span>
+      <h3>Blog Posts</h3>
+      <p>Reflections on the learning path, tools, workflows, and cybersecurity concepts.</p>
+    </a>
+    <a class="feature" href="{{ '/projects/' | relative_url }}">
+      <span class="tag">portfolio</span>
+      <h3>Projects</h3>
+      <p>Scripts, homelab services, dashboards, detections, and small security tools.</p>
+    </a>
+  </div>
+  <div class="stats">
+    <div class="stat"><strong>{{ site.writeups | size }}</strong><span>writeups</span></div>
+    <div class="stat"><strong>{{ site.notes | size }}</strong><span>notes</span></div>
+    <div class="stat"><strong>{{ site.projects | size }}</strong><span>projects</span></div>
+    <div class="stat"><strong>{{ site.posts | size }}</strong><span>blog posts</span></div>
+  </div>
+</section>

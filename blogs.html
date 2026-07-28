@@ -1,0 +1,14 @@
+---
+layout: page
+title: "Blogs"
+description: "Longer posts about tools, methodology, mistakes, mental models, and the security topics I am learning."
+eyebrow: "learning in public"
+permalink: /blogs/
+nav: blogs
+---
+
+<section class="article-list">
+  {% for post in site.posts %}
+    {% include card.html item=post label="blog" %}
+  {% endfor %}
+</section>

@@ -1,0 +1,24 @@
+---
+layout: page
+title: "Projects"
+description: "Small builds that turn notes into proof: automation, lab services, monitoring ideas, and security tooling."
+eyebrow: "scripts - homelab - detections"
+permalink: /projects/
+nav: projects
+---
+
+{% assign projects = site.projects | sort: "date" | reverse %}
+<section class="grid">
+  {% for item in projects %}
+    <a class="card" href="{{ item.url | relative_url }}">
+      <span class="tag">{{ item.status }}</span>
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+      <div class="pill-row">
+        {% for tag in item.tags limit:4 %}
+          <span class="pill">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    </a>
+  {% endfor %}
+</section>

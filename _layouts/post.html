@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<article class="article">
+  <span class="eyebrow">
+    {% if page.platform %}{{ page.platform }}{% elsif page.area %}{{ page.area }}{% elsif page.status %}project - {{ page.status }}{% else %}{{ page.section }}{% endif %}
+  </span>
+  <h1><span class="gradient-text">{{ page.title }}</span></h1>
+  {% if page.description %}<p class="page-lede">{{ page.description }}</p>{% endif %}
+  <div class="meta">
+    {% if page.date %}<span>{{ page.date | date: "%B %-d, %Y" }}</span>{% endif %}
+    {% if page.reading_time %}<span>{{ page.reading_time }}</span>{% endif %}
+    {% if page.os %}<span>{{ page.os }}</span>{% endif %}
+    {% if page.difficulty %}<span>{{ page.difficulty }}</span>{% endif %}
+  </div>
+  {% if page.tags %}
+    <div class="pill-row">
+      {% for tag in page.tags %}
+        <span class="pill">{{ tag }}</span>
+      {% endfor %}
+    </div>
+  {% endif %}
+  {% if page.repo %}
+    <p><a class="button" href="{{ page.repo }}">View repository</a></p>
+  {% endif %}
+  <div class="article-body">
+    {{ content }}
+  </div>
+</article>

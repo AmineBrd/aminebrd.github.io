@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<header class="page-header">
+  {% if page.eyebrow %}<span class="eyebrow">{{ page.eyebrow }}</span>{% endif %}
+  <h1 class="page-title"><span class="gradient-text">{{ page.title }}</span></h1>
+  {% if page.description %}<p class="page-lede">{{ page.description }}</p>{% endif %}
+</header>
+
+{{ content }}

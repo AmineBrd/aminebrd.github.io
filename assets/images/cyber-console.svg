@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-label="Cyber console illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#171127"/>
+      <stop offset=".55" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#120814"/>
+    </linearGradient>
+    <linearGradient id="stroke" x1="120" y1="600" x2="760" y2="100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#d6ff65"/>
+      <stop offset=".45" stop-color="#53e5ff"/>
+      <stop offset="1" stop-color="#ff4fd8"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="900" height="700" fill="url(#bg)"/>
+  <g opacity=".16" stroke="#bda4ff">
+    <path d="M0 120h900M0 220h900M0 320h900M0 420h900M0 520h900M140 0v700M280 0v700M420 0v700M560 0v700M700 0v700"/>
+  </g>
+  <g fill="none" stroke="url(#stroke)" stroke-width="4" filter="url(#glow)">
+    <path d="M138 436c85-138 151-192 248-160 101 33 102-92 211-91 70 1 111 48 169 122"/>
+    <path d="M164 504h140l62-94 84 132 90-227 78 189h118"/>
+    <path d="M245 183h118l42 55h118l48-74h109"/>
+  </g>
+  <g fill="#0b0814" stroke="#53e5ff" stroke-width="3">
+    <circle cx="188" cy="436" r="18"/>
+    <circle cx="386" cy="276" r="18"/>
+    <circle cx="598" cy="185" r="18"/>
+    <circle cx="735" cy="307" r="18"/>
+    <circle cx="304" cy="504" r="18"/>
+    <circle cx="540" cy="315" r="18"/>
+  </g>
+  <g transform="translate(120 88)">
+    <rect width="320" height="150" rx="8" fill="#070812" stroke="#8f63ff" stroke-opacity=".55"/>
+    <circle cx="28" cy="28" r="6" fill="#ff4fd8"/>
+    <circle cx="50" cy="28" r="6" fill="#ff9f43"/>
+    <circle cx="72" cy="28" r="6" fill="#d6ff65"/>
+    <text x="28" y="74" fill="#d6ff65" font-family="monospace" font-size="24">$ nmap -sCV target</text>
+    <text x="28" y="112" fill="#b7adc9" font-family="monospace" font-size="20">80/tcp http</text>
+  </g>
+  <g transform="translate(520 430)">
+    <rect width="260" height="120" rx="8" fill="#070812" stroke="#53e5ff" stroke-opacity=".5"/>
+    <text x="24" y="48" fill="#ff7ce8" font-family="monospace" font-size="22">flags captured</text>
+    <text x="24" y="84" fill="#f5f3ff" font-family="monospace" font-size="28">02 / 02</text>
+  </g>
+</svg>

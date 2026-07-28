@@ -1,0 +1,24 @@
+<a class="article-card{% unless include.image %} compact{% endunless %}" href="{{ include.item.url | relative_url }}">
+  {% if include.image %}
+    <div class="article-thumb">
+      <img src="{{ include.image | relative_url }}" alt="">
+    </div>
+  {% endif %}
+  <div>
+    {% if include.label %}<span class="tag">{{ include.label }}</span>{% endif %}
+    <h2>{{ include.item.title }}</h2>
+    <div class="meta">
+      {% if include.item.date %}<span>{{ include.item.date | date: "%B %-d, %Y" }}</span>{% endif %}
+      {% if include.item.reading_time %}<span>{{ include.item.reading_time }}</span>{% endif %}
+      {% if include.item.difficulty %}<span>{{ include.item.difficulty }}</span>{% endif %}
+    </div>
+    <p>{{ include.item.description }}</p>
+    {% if include.item.tags %}
+      <div class="pill-row">
+        {% for tag in include.item.tags limit:5 %}
+          <span class="pill">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</a>

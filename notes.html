@@ -1,0 +1,24 @@
+---
+layout: page
+title: "Notes"
+description: "Fast references for commands, concepts, checklists, and things worth keeping close during labs."
+eyebrow: "cheatsheets - commands - references"
+permalink: /notes/
+nav: notes
+---
+
+{% assign notes = site.notes | sort: "date" | reverse %}
+<section class="grid">
+  {% for item in notes %}
+    <a class="card" href="{{ item.url | relative_url }}">
+      <span class="tag">{{ item.area }}</span>
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+      <div class="pill-row">
+        {% for tag in item.tags limit:4 %}
+          <span class="pill">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    </a>
+  {% endfor %}
+</section>

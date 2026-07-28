@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  </head>
+  <body>
+    <div class="site-shell">
+      {% include nav.html %}
+      <main>
+        {{ content }}
+      </main>
+    </div>
+    <footer class="footer">
+      Built with Jekyll for a cybersecurity learning journey. Redact secrets, publish responsibly, and keep retired-machine writeups clean.
+    </footer>
+  </body>
+</html>

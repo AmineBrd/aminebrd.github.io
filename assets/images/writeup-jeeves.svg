@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420" role="img" aria-label="Jeeves thumbnail">
+  <defs>
+    <linearGradient id="g" x1="84" y1="338" x2="336" y2="78" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#d6ff65"/>
+      <stop offset=".42" stop-color="#ff4fd8"/>
+      <stop offset="1" stop-color="#6d5dfc"/>
+    </linearGradient>
+  </defs>
+  <rect width="420" height="420" rx="8" fill="#0a0812"/>
+  <circle cx="210" cy="210" r="156" fill="url(#g)" stroke="#ff9f43" stroke-width="18"/>
+  <circle cx="210" cy="174" r="58" fill="#f5f3ff"/>
+  <path d="M105 342c16-74 57-112 105-112s89 38 105 112" fill="#181322"/>
+  <path d="M156 134c18-42 90-42 108 0-30 14-78 14-108 0Z" fill="#111"/>
+  <path d="M150 166h120" stroke="#111" stroke-width="14" stroke-linecap="round"/>
+  <path d="M174 176c17 14 55 14 72 0" stroke="#111" stroke-width="8" stroke-linecap="round"/>
+  <path d="M188 239l22 78 22-78" fill="#d6ff65"/>
+  <path d="M164 238l46 34 46-34" fill="none" stroke="#f5f3ff" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M118 74h184M93 105h234M93 315h234" stroke="#0a0812" stroke-opacity=".32" stroke-width="8"/>
+</svg>

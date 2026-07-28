@@ -1,0 +1,18 @@
+---
+layout: default
+---
+{{ content }}
+
+{% assign recent = site.posts | concat: site.writeups | concat: site.notes | concat: site.projects | sort: "date" | reverse %}
+
+<section class="section">
+  <div class="section-head">
+    <h2>Recent drops</h2>
+    <a class="button" href="{{ '/blogs/' | relative_url }}">Browse all</a>
+  </div>
+  <div class="article-list">
+    {% for item in recent limit:4 %}
+      {% include card.html item=item label=item.section %}
+    {% endfor %}
+  </div>
+</section>
